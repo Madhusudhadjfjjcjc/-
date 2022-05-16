@@ -31,7 +31,7 @@ jobs:
          run: |
            git clone -b main https://Hmmmmmmmmmmmmmm12262626:${{ secrets.GH_TOKEN }}@github.com/Hmmmmmmmmmmmmmm12262626/manual-encoder
        - name: Running PrivateEncoderV2.0 Bot 
-         timeout-minutes: 5
+         timeout-minutes: 350
          continue-on-error: true
          run: |
            cd manual-encoder
