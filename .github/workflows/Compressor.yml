@@ -23,13 +23,13 @@ jobs:
            git config --global user.name ${{ secrets.GitHubName }}
            git config --global user.email ${{ secrets.GitHubMail }}
            git config --global credential.helper store
-           echo "https://Hmmmmmmmmmmmmmm12262626:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
+           echo "https://github.com/Madhusudhadjfjjcjc:${{ secrets.GH_TOKEN }}@github.com" > ~/.git-credentials
            
        
        - name: cloning repo
          continue-on-error: true
          run: |
-           git clone -b main https://Hmmmmmmmmmmmmmm12262626:${{ secrets.GH_TOKEN }}@github.com/Hmmmmmmmmmmmmmm12262626/manual-encoder
+           git clone -b main https://github.com/Madhusudhadjfjjcjc:${{ secrets.GH_TOKEN }}@github.com/Hmmmmmmmmmmmmmm12262626/manual-encoder
        - name: Running PrivateEncoderV2.0 Bot 
          timeout-minutes: 350
          continue-on-error: true
